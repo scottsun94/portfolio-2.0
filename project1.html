@@ -1,9 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112307082-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112307082-1');
+    </script>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    
     <title>Huaiwei Sun | Philosophia</title>
     <!-- Bootstrap core CSS -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
@@ -16,23 +29,25 @@
     <link rel="stylesheet" href="css/project1.css">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
 
+
   </head>
   <body>
 
     <div id="fh5co-page">
       <!-- Side Navigation -->
       <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-      <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-        
+      <aside id="fh5co-aside" role="complementary" class="border js-fullheight sidebar">
+        <a href="index.html" class="btn btn-back" role="button">&#8249; Projects</a>
+
         <p class = "product_name">AI Planner</p>
         <nav id="fh5co-main-menu" role="navigation">
-          <ul>
+          <ul class="nav">
             <li><a href="#Overview">Overview</a></li>
-              <li><a href="#Objective" class="sub">Objective</a></li>
+              <li><a href="#Objective" class="sub">Design Objective</a></li>
               <li><a href="#Process" class="sub">Process</a></li>
 
             <li class="font_padding"><a href="#Formative">Formative Research</a></li>
-              <li><a href="#Methods" class="sub">Methods</a></li>
+              <li><a href="#Plan" class="sub">Resarch Plan</a></li>
               <li><a href="#Observation" class="sub">Observation</a></li>
               <li><a href="#Review_feedback" class="sub">Review of user feedback</a></li>
               <li><a href="#Task_analysis" class="sub">Task Analysis</a></li>
@@ -51,16 +66,14 @@
               <li><a href="#Final_wireframe" class="sub">Final Wireframes</a></li>
               <li><a href="#Prototype" class="sub">Prototype</a></li>
               <li><a href="#Feedback_2" class="sub">Feedback Session for Prototype</a></li>
-              <li><a href="#Iteration_1" class="sub">Prototype Iteration One</a></li>
+              <li><a href="#Iteration_1" class="sub">Iteration One</a></li>
               <li><a href="#Benchmarking" class="sub">Benchmarking Test</a></li>
-              <li><a href="#Iteration_2" class="sub">Prototype Iteration Two</a></li>
-
+              <li><a href="#Iteration_2" class="sub">Iteration Two</a></li>
               <li><a href="#Final_design" class="sub">Final Design</a></li>
-              <li><a href="#User_flow" class="sub">User Flow</a></li>
               <li><a href="#Final_prototype" class="sub">Final Prototype</a></li>
           </ul>
         </nav>
-        <a href="index.html" class="btn btn-back" role="button">&#8249; Home page</a>
+        
       </aside>
       <!-- End of Side Navigation -->
 
@@ -69,26 +82,30 @@
               <div class="fh5co-narrow-content">
                       <div id="Overview">
                         <div>
-                          <img src="img/proj1_background.png">
+                          <img src="img/project1/overview.png">
                       </div>
                       <h2 class="page-header"><span style="color:#00AAA8">01. </span>Overview</h2>
                       <hr>
                       <div class="row">
                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                              <h3 class="overview_subtitle" id="Objective">Objective</h3>
-                              <p class="project-desc">We aim to <span style="font-weight: 400; color: #00AAA8">improve the experience of furnishing apartments and buying furniture in urban 
-                                cities for new college graduates</span> who struggle in:<br>
-                                -Furnishing own small urban-city apartments fast and efficient<br>
-                                -Struggling with furniture placement and aesthetics<br>
-                                -Running on a limited budget for rent, furniture and other services<br>
+                              <h3 class="overview_subtitle" id="Objective">Design Objective</h3>
+                              <p class="project-desc"><span style="font-weight: 600">To improve the experience of furnishing apartments and buying furniture in urban cities for newly graduated college students.</span><br></p>
+                              <p class="project-desc">These students often struggle in:<br>
+                                - Furnishing own small urban-city apartments fast and efficient<br>
+                                - Planning the furniture placement and aesthetics<br>
+                                - Running on a limited budget for rent, furniture and other services<br>
                               </p>
+                              <div class = "divide_40"></div>
+                              <h3 class="overview_subtitle " id="Process">Process</h3>
+                              <img style = "width:100%" src="img/project1/process.png">
+                              <div class="divide_40"></div>
                           </div>
 
                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                               <h3 class="overview_subtitle">My Role</h3>
-                              <p class="project-desc">1. In the formative research part, I took part in the in-store observation, task analysis, survey design and semi-structured interviews. I also conducted competitive analysis. Then I worked with teammates to analyze our data and distilled the user requirements from our findings.<br>
-                                2. I actively contributed in the ideation, sketch and wireframe phases. I decided on the overall visual style of the prototype and designed more than half of the hifi screens in several iterations. Yuyan Duan and I completed another iteration to make the prototype better designed after the project was over.<br>
-                              3. In terms of evaluation, I mainly contributed to the feedback sessions for wireframes and prototype.</p> 
+                              <p class="project-desc">1. In the formative research phase, I took part in the in-store observation, task analysis, survey design and semi-structured interviews. I conducted competitive analysis independently. Then I worked with teammates to analyze our data and distilled the user requirements from our findings.<br>
+                                2. I actively contributed in the ideation, sketch and wireframe phases. The information architecture and general user flow were revised and finalized by me. I created the overall visual style of the prototype and designed more than half of the hifi screens in several iterations. Yuyan Duan and I completed another iteration to improve the prototype after the project was over.<br>
+                              3. In terms of evaluation, I mainly contributed to the feedback sessions for wireframes and prototype. I worked as facilitator and notetaker.</p> 
                           </div>
                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                               
@@ -98,43 +115,12 @@
 
                               <h3 class="overview_subtitle">Project Team</h3>
                               <p class="project-desc">Huaiwei Sun | Yuyan Duan | David Howard | Dillon Weeks</p>
-<!--                                <h3 class="overview_subtitle" id="Approach">Process</h3>
-                               <p class="project-desc">
-                                <b>1.User Research:</b><br>
-                               - Firstly, we collected and aggregated feedback from iOS stores, students, student club leaders. We also analyzed the data on Apple's App Analytics.<br>
-                               - We conducted semi-structured interviews with our classmates and friends and probed to understand what they expected from this app.<br>
-                               - Then, we did competitive analysis and learnt from similar apps on the market<br>
-                               - Fianlly, we aggregated all the notes and used spreadsheets to analyze them to get the findings. And we created personas and formed user requirements for the following design iterations.<br>
-                               <br>
 
-                               
-                               <b>2.Desgin Iterations:</b><br>
-                               - We started from the allocation of functions based on users' needs. Then we redesigned the information architecture according to the functions we decided to keep.<br>
-                               - Then we explored the basic layout of the home screen and put forward different ideas. We evaluated them and picked one direction as a reference for the following design of wireframes and user flow of the whole app.<br>
-                               - We created the wireframes and the basic user flow. We conducted internal reviews and tweaked them based on team members' feedback.<br>
-                               <br>
-                               - Next, we zoomed in on the hifi prototypes and finished one more round of iteration according to internal feedback.<br>
-                               - Finally, we completed all the design of screens and user flow.<br>
-                               - Unfortunately, due to the limit of time and skills we have, we didn't conduct usability tests in this project. We should have done some benchmarking tests to evaluate the usability or accessibility of our app and had one more iteration.<br>
-                               <br>
-
-                               <b>3.Development:</b><br>
-                               - We export all the assets and specs and collaborated with iOS developers to actualize the design as accurate as possible.<br>
-                               - After the devlopment, we shipped it to the iOS store in April 2017. We also carried out promotion within the university and introduced the new version of Tong Qu.<br>
-                               - Finally, we used quantative from App Analytics and qualitative data from iOS store reviews to evaluate the impact of this update.
-                               <br>
-                               </p> -->
-                               <h3 class="overview_subtitle">Tools</h3>
-                               <p class="project-desc">Pen | Paper | Adobe XD | Balsamiq Mockups | Sketch | Flinto | inVision</p>                       
+                              <h3 class="overview_subtitle">Tools</h3>
+                              <p class="project-desc">Pen | Paper | Adobe XD | Balsamiq Mockups | Sketch | Flinto | inVision</p>                       
                           </div>
                       </div>
-                      <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                          <h3 class="overview_subtitle " id="Process">Process</h3>
-                          <img style = "width:100%" src="img/project1/process.png">
-                          <div class="divide_80"></div>
-                        </div>
-                      </div>
+                      <div class="divide_80"></div>
                   </div>
 
                   <div id="Formative">
@@ -143,42 +129,49 @@
                       <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="divide_20"></div>
-                          <h3 class="overview_subtitle" id="Methods">Methods</h3>
+                          <h3 class="overview_subtitle" id="Plan">Research Plan</h3>
                           <p class = "project-desc">
                                <span style="font-weight: 600">Research goals:</span> <br>
-                               1. <span style="color:#00AAA8">Understood and empathized better with our target user groups: </span>newly graduate students who had little experience in and furnishing and buying furniture.<br>
-                               2.  <span style="color:#00AAA8">Discovered significant issues or potentials</span> in this process.<br>
-                               3.  <span style="color:#00AAA8">Learnt about the entire process</span> within which users bought furniture.<br>
+                               <span style="font-weight: 600">1. Understood and empathized better with our target user groups: newly graduated students who had little experience in furnishing and buying furniture.<br>
+                               2. Learnt about the entire process within which users made furnishing plans and bought furniture.<br>
+                               3. Discovered significant issues and design opportunities and selected the problem space we focused on in the following work.</span>   <br>
                           </p>
                                <br>
 
                                
                           <p class = "project-desc">
                                <span style="font-weight: 600">Selection of Methods and Justification:</span> <br>
-                               1.  <span style="font-weight: 600; color: rgb(30,30,30);">Physical Store Observation</span> - We visited an IKEA store and a Home Depot store in Atlanta. We observed the spatial layout of the store, the shelves for all the furniture or related products and how users interacted with the environment. This method helped us discover some existing pain points or space to improve in brick and mortar stores.
+                               1.  <span style="font-weight: 600; color: rgb(30,30,30);">Field Observation</span> - We visited an IKEA store and a Home Depot store in Atlanta. We observed the spatial layout of the store, the shelves for all the furniture or related products and how users interacted with the environment. This method could help us discover some existing pain points or space to improve in brick and mortar stores.
                               <br>
                           </p>
                           <p class = "project-desc">
-                               2. <span style="font-weight: 600; color: rgb(30,30,30)">Review of User Feedback</span> - We conducted a review of existing user feedback related apartment furnishing online in order to unveil general patterns, reviews, preferences, and pain points during the process of apartment furnishing. This method has helped us to broaden our view on the scope of apartment furnishing and gather a wide range of data on general patterns and pain points in the apartment furnishing process, which we later used to make an informed decision on how to narrow down the problem space.<br>
+                               2. <span style="font-weight: 600; color: rgb(30,30,30)">Review of User Feedback</span> - We conducted a review online of existing user feedback for services related to furnishing provided by different companies. This method could help us explore this big topic and gather a wide range of data showing the general patterns, needs, preferences and pain points in the furnishing process.<br>
                           </p>
                           <p class = "project-desc">
-                               3. <span style="font-weight: 600; color: rgb(30,30,30)">Task Analysis</span> - We examined the entire process of buying furniture to furnish one’s apartment and broke it into several steps. This helped us have an overall view of this process and zoom in on each step to do the following research and find the design opportunities.<br>
+                               3. <span style="font-weight: 600; color: rgb(30,30,30)">Task Analysis</span> - We examined the entire process of furnishing and furniture purchase and broke it into several steps. This could help us have an overall view of this process and zoom in on each step to do the following research and find the design opportunities.<br>
                           </p>    
                           <p class = "project-desc">
-                               4. <span style="font-weight: 600; color: rgb(30,30,30)">Survey</span> - We wanted to learn more about users’ preferences and habits at different stages in the process of furnishing and buying furniture at a large scale. We were also able to gather demographic information from it to help us learn more about our users.<br>
+                               4. <span style="font-weight: 600; color: rgb(30,30,30)">Survey</span> - We used online survey to collect data from our target users. This could allow us to gather demographic data and learn more about users’ preferences and habits at different stages in the process of furnishing and furniture purchase  at a large scale<br>
                           </p>
                           <p class = "project-desc">
-                               5. <span style="font-weight: 600; color: rgb(30,30,30)">Semi-structured Interviews</span> - We wanted to learn more about users’ past experience in buying furniture and furnishing their apartments and whys behind their behavior and thoughts. So we recruited 4 people who had bought furniture for their new apartments after their graduation to share their experiences.<br>
+                               5. <span style="font-weight: 600; color: rgb(30,30,30)">Semi-structured Interviews</span> - We used semi-structured interviews to learn about users’ past experience of furnishing and furniture purchase. This method could help us gather more in-depth data, espcially those related to people's values and attitudes, which enabled us to better empathize with users.<br>
                           </p>
                           <p class = "project-desc">
-                               6. <span style="font-weight: 600; color: rgb(30,30,30)">Competitive Analysis</span> - We studied the existing products on the market related to furnishing and furniture. It taught us about the existing solutions at different stages of furnishing one’s apartment, such as creating the furnishing plan, seeking furniture, buying furniture, transporting furniture and so on.<br>
+                               6. <span style="font-weight: 600; color: rgb(30,30,30)">Competitive Analysis</span> - We studied the existing products on the market related to furnishing and furniture purchase. This method could inform us of the existing solutions which meet differnt user needs, such as creating the furnishing plan, seeking furniture, buying furniture, transporting furniture and so on.<br>
                           </p>
                           
                           <div class="divide_20"></div>
                           <hr>
                           <div class="divide_40"></div>
-                          <h3 class="overview_subtitle" id="Observation">Physical Store Observation</h3>
-                          <p class = "project-desc">During our observation in IKEA and The Home Depot, we observed the entire flow users went through and randomly picked some customers to have quick and dirty talks about their goals, attitudes and experiences. We collected some important insights: <span style="color:#00AAA8">The Home Depot's business was not focused on our target users.; delivery was inconvenient, especially for people who didn't have cars; returns were inevitable because users wouldn't realize how items fit into their homes until they brought them back, etc.</span></p>
+                          <h3 class="overview_subtitle" id="Observation">Field Observation</h3>
+                          <p class = "project-desc">During our observation in IKEA and The Home Depot, we observed the entire flow users went through and randomly picked some customers to have quick and dirty talks about their goals, attitudes and experiences. The main takeaways included:</p>
+                          <p class = "project-desc">
+                          <span style="font-weight: 600;">
+                          - The Home Depot's business was not focused on our target users. They focused more on contractors, builders, interior desingers and DIY customers who have big houses rather than small apartments.<br>
+                          - Delivery was inconvenient, especially for people who didn't have cars. Delivery services were quite expensive.<br>
+                          - Returns were inevitable now because users wouldn't know how items fit into their homes until they brought them back.<br>
+                          - People enjoy seeing and touching furniture by themselves to be confident in their purchase.<br>
+                          - Though Ikea's self-pickup system is complete, some people still get confused and need help from staff.</span></p>
                           <img src="img/project1/observation.png">
                           <div class="divide_20"></div>
 
@@ -186,16 +179,18 @@
 
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Review_feedback">Review of User Feedback</h3>
-                          <p class = "project-desc">Websites and platforms we investigated on includes Pinterest, ConsumerAffairs (website for consumer reviews), MoveLoot (Second-hand furniture platform), CORT (Furniture Rental Service for Graduate Students). <span style="color:#00AAA8"> We aggregated customer pain points before and after furnishing apartment, such as customers don’t know how to decorate their apartments, they are charged for redelivery of furniture, they don’t have a right budget for purchasing furniture, and unfamiliarity with the furnishing process, etc.</span></p>
-<!--                           <div class="divide_20"></div>
-                          <img src="img/project2/task_analysis.png"> -->
+                          <p class = "project-desc">After the offline observation, we investigated the user feedback on websites and platforms including ConsumerAffairs (website for consumer reviews), MoveLoot (Second-hand furniture platform) and CORT (Furniture Rental Service for Graduate Students).</p>
+                          <p class = "project-desc">
+                           <span style="font-weight: 600;">We distilled the pain points from user's complaints and the result is listed below.</span></p>
+                          <img src="img/project1/review_feedback.png">
                           <div class="divide_20"></div>
 
                           <hr>
 
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Task_analysis">Task Analysis</h3>
-                          <p class = "project-desc">After the in-store observation and review of online feedback, we had a more comprehensive understanding of how users bought furniture to furnish their apartments in different ways.<span style="color:#00AAA8"> We broke this process into detailed steps </span>to further understand what pain points existed in each step.</p>
+                          <p class = "project-desc">Having finished the field observation and the review of online feedback, we had a more comprehensive understanding of how users bought furniture to furnish their apartments in different ways.</p>
+                          <p class = "project-desc"><span style="font-weight: 600;"> We abstracted the different detailed processes into one. Then we broke it into detailed steps to zoom in on each of them to further capture user needs and existing pain points.</span></p>
                           <div class="divide_20"></div>
                           <img src="img/project1/task_analysis.png">
                           <div class="divide_20"></div>
@@ -204,7 +199,12 @@
 
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Survey">Survey</h3>
-                          <p class = "project-desc">We used Google Forms to create our survey and distributed on different colleges' subreddits. In the survey, we included questions collecting demographic data and participants' general opinions and preferences data during the furnishing process.<span style="color:#00AAA8"> Out of 86 responses we got from the survey, we observed some general preferences: people often collect information and make furnishing plans online; most of users accept second-hand furniture as an option; more than half of the participants transport furniture using personal vehicles and so on.</span> </p>
+                          <p class = "project-desc">We used Google Forms to create our survey and distributed it on different colleges' subreddits. In the survey, we included questions collecting demographic data and participants' general opinions and preferences during the furnishing and purchase process.</p>
+                          <p class = "project-desc"><span style="font-weight: 600;"> Out of 86 responses we got from the survey, we observed some general preferences:<br>
+                          - People often collect information and make furnishing plans online.<br>
+                          - Most of users accept second-hand furniture as an option.<br>
+                          - Price, aesthetic, size and material are the 4 most important factors influencing user's choice of furniture.<br>
+                          - More than half of the participants transport furniture using personal vehicles.</span> </p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                           <img src="img/project1/survey_1.png">
@@ -219,8 +219,11 @@
 
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Interview">Semi-structured Interviews</h3>
-                          <p class = "project-desc">In order to learn more about users' prior exeperience of furnishing rooms and buying furniture and pain points they had met, we conducted 4 semi-structured interviews with our target users to ask about their experiences and probe whys behind their behavior. Through interviews, </p>
-                          <p class = "project-desc"><span style="color:#00AAA8">Some important insights we found through the interviews included: measuring the dimensions of apartments was troublesome to users; making furnishing plan, especially creating a unified style, was hard to users if they didn't have related background.</span></p>
+                          <p class = "project-desc">We pursued the breadth of data in the above research. Then we turned around and started to get more in-depth data. We conducted 4 semi-structured interviews with our target users to ask about their furnishing and purchase experiences. When they were answering our questions, We kept probing whys behind their behavior based on their answers. </p>
+                          <p class = "project-desc"><span style="font-weight: 600;">Some important insights we found through the interviews included:<br>
+                          - Measuring the dimensions of apartments was unfamiliar to users and may lead to anxiety and frustration.<br>
+                          - Making furnishing plans, especially creating one with a unified visual style, was hard to users if they hadn't received any design, art or related training before.<br>
+                          - When users started to work, their time is limited for doing research on the furnishing. So they had to finish this process in a limited amount of time to settle themselves down.</span></p>
                           <img src="img/project1/interview.png">
                           <div class="divide_20"></div>
 
@@ -228,7 +231,8 @@
 
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Competitive_analysis">Competitive Analysis</h3>
-                          <p class = "project-desc">Based on users' feedback and some insights we concluded from the former research, we did competitive analysis in different fields related to furnishing and furniture purchase. <span style="color:#00AAA8">We were able to know more about the existing solutions on the market to help ourselves avoid focusing on problems or pain points which had already been well solved. For example, there were too many solutions for solving the problem of transporting furniture, whether innovative or conservative, indicating that it was not very promising for us to make more efforts for this problem.</span></p>
+                          <p class = "project-desc">Based on users' feedback and some insights we concluded from the former research, we did competitive analysis in different fields related to furnishing and furniture purchase.</p>
+                          <p class = "project-desc"><span style="font-weight: 600;">We were able to know more about the existing solutions on the market to help ourselves avoid focusing on problems or pain points which had already been well solved. For example, there were too many solutions for solving the problem of transporting furniture, whether innovative or conservative, indicating that it was not very promising for us to make more efforts for this problem.</span></p>
                           <div class="divide_20"></div>
                           <img src="img/project1/competitive_analysis.png">
                           <div class="divide_20"></div>
@@ -237,7 +241,8 @@
 
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Synthesis">Synthesis of Findings</h3>
-                          <p class = "project-desc">Aggregating all the data we collected from methods above, we analyzed all the pain points and users' attitudes and habits through the entire process of furnishing and furniture purchase. Finally, <span style="color:#00AAA8">we determined the problem space we would work on: Placement of furniture and Aesthetics of the furnishing plan.</span></p>
+                          <p class = "project-desc">Aggregating all the data we collected from methods above, we analyzed all the pain points, users' attitudes and habits through the entire process of furnishing and furniture purchase.</p> 
+                          <p class = "project-desc"><span style="font-weight: 600;">After team discussion, we determined that the most promising problem spaces were from the intersection of users' pain points and uses' valued factors. The problem spaces we would work on were: Placement of furniture and Aesthetics of the furnishing plan.</span></p>
                           <img src="img/project1/synthesis.png">
                         </div>         
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -247,7 +252,7 @@
 
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Personas">Personas</h3>
-                          <p class = "project-desc">Having extracted important attributes from the demographic data collected from the survey and interviews, <span style="color:#00AAA8">we created two personas representing our typical users to help us remain focus in the following phases.</span></p>
+                          <p class = "project-desc">Having extracted important attributes from the demographic data collected from the survey and interviews, <span style="font-weight: 600;">we created two personas representing our typical users to help us remain focus during the exploration of the problem spaces we decided on.</span></p>
                           <img src="img/project1/personas.png"> 
                           <div class="divide_20"></div>
 
@@ -255,7 +260,7 @@
 
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Journey">User Journey</h3>
-                          <p class = "project-desc"><span style="color:#00AAA8">We also adpoted user journey map to describe our typical users' experiences of furnishing and furniture purchase, which helped us better empathize with our users.</span> Since the journeys are similar between two kinds of our typical users, we used one map to represent the experiences of both of them.</p>
+                          <p class = "project-desc"><span style="font-weight: 600;">We also adpoted user journey map to describe our typical users' experiences of furnishing and furniture purchase, which helped us better empathize with our users.</span> Since the journeys are similar between two kinds of our typical users, we used one map to represent the experiences of both of them.</p>
                           <img src="img/project1/journey.png"> 
                           <div class="divide_20"></div>
 
@@ -263,7 +268,10 @@
 
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Requirements">User Requirements and Design Criteria</h3>
-                          <p class = "project-desc">Finally, we combined all the insights we had and listed <span style="color:#00AAA8">user requirements and design criteria in this table which would lead us to explore our problem space in the rest of the project.</span></p>
+                          <p class = "project-desc">Finally, in order to have a more specific guideline for the following design phases, we combined all the insights we had and listed user requirements and design criteria in this table.</p>
+                          <p class = "project-desc"><span style="font-weight: 600;">- First, we would ensure that our designs could meet the user requirements.<br>
+                          - Our designs also had to work in a proper way that users enjoyed, i.e, it needed to meet the design criteria.<br>
+                          - The priority would help us make design decisions when we were in design dilemmas.</span></p>
                           <img src="img/project1/user_requirements.png">
                           <div class="divide_20"></div>
                       </div>
@@ -278,7 +286,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <h3 class="overview_subtitle" id="Ideation">Ideation</h3>
                           <p class = "project-desc">Keeping the user requirements in our mind, we had two brainstorming sessions and came up with more than 30 ideas.</p>
-                          <p class = "project-desc">Popular ideas include “IKEA + Airbnb”, which is allowing people to really live in a furnished apartment for a day to help them make an informed decision during furniture purchase, “Roomba with measurements”, which allows Roomba to clean the apartment before moving in while working out the apartment measurements and then giving furnishing recommendations based on room layouts. <span style="color:#00AAA8">After serious consideration of the feasibility and creativity of each idea, all four team members each picked an idea that they thought had the most potential. So four ideas were left to be further developed in the wireframe phase.</span></p>
+                          <p class = "project-desc"><span style="font-weight: 600;">After careful consideration of the feasibility and creativity of each idea, all four team members each picked an idea that they thought had the most potential. So four ideas were left to be further developed in the wireframe phase.</span></p>
                           <img src="img/project1/brainstorming.png">
                           <div class="divide_20"></div>
 
@@ -287,19 +295,23 @@
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Lofi">Lofi Wireframes</h3>
                           <p class = "project-desc"><span style="font-weight: 600">IDEA 1 - AI Planner</span> <br></p>
-                          <p class = "project-desc">AI Planner stemmed from people’s needs to effortlessly furnish the apartment with a pre-prepared whole set of furniture. Thus, <span style="color:#00AAA8">AI Planner gives the user quick furniture/layout recommendation based on the apartment floor plan that user draws.</span> It allows the user to set their own budget, customize their own furnishing needs, view their apartment floor plan and layout recommendations in both a 2D and 3D views, and get spot-on layout recommendations in no time. Users could place their orders and get all the furniture inside the app. Thus, AI Planner provides quick and effortless room furnishing to users with high level of customization. The key challenges to this idea is to acquire user’s apartment floor plan as well as the ways of presenting the furniture on the app. </p>
+                          <p class = "project-desc"><span style="font-weight: 600;">AI Planner gives the users quick furniture/layout recommendation based on the apartment floor plan that user draws. AI Planner provides quick and effortless room furnishing to users with high level of customization.</span>  </p>
+                          <p class = "project-desc"><span style="color:#E0334D">The key challenges to this idea is to acquire user’s apartment floor plan as well as the ways of presenting the furniture on the app.</span> </p>
                           <img src="img/project1/idea1.png">
                           <div class="divide_80"></div>
                           <p class = "project-desc"><span style="font-weight: 600">IDEA 2 - Furniture Remains</span> <br></p>
-                          <p class = "project-desc">The idea of furniture remains is inspired by the fact that apartment residents usually have mobility - thus, old residents have to get rid of their furniture from time to time. And what is more convenient than selling old furniture to new residents? Thus, <span style="color:#00AAA8">Furniture Remains aims to build a communication bridge between the apartment old lessees and new lessees and make the apartment furniture transferred to new hands while staying exactly where they are.</span> Such design removes the placement burden on the new lessee as it allows them to rent an apartment along with a whole set of fitting-floor-plan furniture, and also removes all delivery and transportation trouble for both parties. This idea eliminates user’s whole troublesome experience of measuring floor plan, going to the store, and purchasing furniture, as the new lessee can check out the furniture along the apartment and purchase of the whole set of furniture can be done instantly. One challenge of this app can be that the app has to collaborate with apartment, and therefore may have little user base at first.</p>
+                          <p class = "project-desc"><span style="font-weight: 600;">Furniture Remains aims to build a communication bridge between the apartment old lessees and new lessees and make the apartment furniture transferred to new hands while staying exactly where they are.</span></p>
+                          <p class = "project-desc"><span style="color:#E0334D">The challenge of this idea is that the app has to collaborate with apartments, and therefore may have little user base at first.</span> </p>
                           <img src="img/project1/idea2.png">
                           <div class="divide_80"></div>
                           <p class = "project-desc"><span style="font-weight: 600">IDEA 3 - Roomba with Measurements</span> <br></p>
-                          <p class = "project-desc"><span style="color:#00AAA8">The Roomba solution helps users take the measurements of rooms while doing the normal cleaning and sends them to a smartphone app.</span> Adding a lighting and color sensor also allows the Roomba to construct a basic lighting simulation for the user when creating digital 3D models of their rooms. More importantly, we designed the Roomba to be linked with mobile applications that receive the room measurements directly from it. We think that combining digital measurements with layout recommendations and furniture purchase(Idea 1) could have huge potential. However, the feasibility of this single idea can be slim to us at this time since it's more about the development of Roomba which is out of our problem space.</p>
+                          <p class = "project-desc"><span style="font-weight: 600">The Roomba solution helps users collects spatial, color and lightning data of rooms while doing the normal cleaning and sends them to a smartphone app.</span></p>
+                          <p class = "project-desc"><span style="color:#E0334D">However, the feasibility of this single idea can be slim to us at this time since it's more about the development of Roomba which is bit out of our problem space.</span> </p>
                           <img src="img/project1/idea3.png">
                           <div class="divide_80"></div>
                           <p class = "project-desc"><span style="font-weight: 600">IDEA 4 - 3D Planning Gamified</span> <br></p>
-                          <p class = "project-desc"><span style="color:#00AAA8">3D Planning Gamified allows the user to create a 3D rendering of their rooms in a more gamified context with tutorials to help teach the user furnishing strategies.</span> They may select furnishings available in their area to place in the 3D view of their apartment to get a more accurate view of the floor plan and apartment furnishing status. The highlights of this idea is that it attempts to make the usual strenuous and tedious furnishing experience a game and thus deliver a more entertaining, gamified experience to users. By allowing the user to choose, place and rearrange furniture in their simulated view of apartment, this solution easily solves the furniture placement, aesthetics and apartment pre-planning issues and provides the user with instant purchase. The biggest challenge of this solution is that 3D planning on a mobile platform can be too small for the users to see and operate on details. Our skillsets are also inadequate to support ourselves to create a high-quality 3D gamified design in a limited amount of time. </p>
+                          <p class = "project-desc"><span style="font-weight: 600">3D Planning Gamified allows the user to create a 3D rendering of their rooms in a more gamified context with tutorials to help teach the user furnishing strategies.</span> </p>
+                          <p class = "project-desc"><span style="color:#E0334D">The biggest challenge of this solution is that 3D planning on a mobile platform can be too small for the users to see and operate on details. Our skillsets are also inadequate to support ourselves to create a high-quality 3D gamified design in a limited amount of time. </span> </p>
                           <img src="img/project1/idea4.png">
                           <div class="divide_20"></div>
 
@@ -307,18 +319,18 @@
 
                           <div class="divide_40"></div>
                           <h3 class="overview_subtitle" id="Feedback_1">Feedback Session for Wireframes</h3>
-                          <p class = "project-desc">We presented lofi wireframes of all four ideas to 7 users and asked about their opinions of each idea at the end of session. Here is the summary of the data:<br>                          
-                            As can be seen, <span style="color:#00AAA8">apartment remain and AI Planner are the two ideas that received wide acceptance and least objection.</span> We then conducted a SWOT analysis to compare the four ideas and reached the agreement of keeping AI Planner as the solution to continue.<br>
-                          As the result shows, <span style="color:#00AAA8">AI Planning is very innovative for integrating cutting-edge AI technology with a traditional furnishing process and also has great potential in terms of its compatibleness with other ideas. Thus, we finally decided to go with AI Planning.</span>
-                          </p>
+                          <p class = "project-desc">We presented lofi wireframes of all four ideas to 7 users and asked for their opinions about these ideas at the end of each session. We then conducted a SWOT analysis to compare the four ideas.</p>
+                          <p class = "project-desc"><span style="font-weight: 600">Based on the results we got, we choosed AI Planner to continue with in the following development.</span></p>
+                          
                         <img src="img/project1/feedback_wireframe.png">
                         <div class="divide_20"></div>
 
                         <hr>
 
                         <div class="divide_40"></div>
-                        <h3 class="overview_subtitle" id="Final_wireframe">Final Wireframe</h3>
-                        <p class = "project-desc">Each of us created a version of the wireframe. Then we combined the 4 versions and developed them into the final wireframe.</p>
+                        <h3 class="overview_subtitle" id="Final_wireframe">Final Wireframes</h3>
+                        <p class = "project-desc">Each of us created a version of the wireframes to explore different possbilities of interaction design. Then we combined the 4 versions and developed them into the final wireframes.</p>
+                        <p class = "project-desc"><a target = "_blank" href="project1_detail.html#Final_wireframe"><span style="color:#4A90E2">Check the details of the wireframes.</span></a></p>
                         <img src="img/project1/final_wireframe.png">
                         <div class="divide_20"></div>
 
@@ -334,7 +346,8 @@
 
                           <div class="divide_40"></div>
                         <h3 class="overview_subtitle" id="Feedback_2">Feedback Session for Prototype</h3>
-                        <p class = "project-desc">We included two users in our test to give feedback for our prototype. It is intended to help us uncover some potential issues in terms of usability when they are using our app so that we can make better design decisions and have a better understanding on what we should evaluate in the next phase. </p>
+                        <p class = "project-desc">In order to have a quick test of the usability of our design, we conducted a feedback session with two users to test our prototype and share their feedback.</p>
+                        <p class = "project-desc"><span style="font-weight: 600">Feedback was used to guide the Prototype Iteration One below.</span></p>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <img src="img/project1/prototype_feedback_1.png">
@@ -348,36 +361,25 @@
                         <hr>
 
                         <div class="divide_40"></div>
-                        <h3 class="overview_subtitle" id="Iteration_1">Prototype Iteration One</h3>
+                        <h3 class="overview_subtitle" id="Iteration_1">Iteration One</h3>
                         <p class = "project-desc"><span style="font-weight: 600">1. Find My Apartment</span> <br></p>
-<!--                         <p class = "project-desc">We Initially had users draw out their own floor plan in two ways: free form draw (click to create dots so to connect the lines) and fill form (swipe through the screens to create colored squares to draw the room contour). <span style="color:#E0334D">According to our user feedback, although users learned how to draw rooms in the feedback session, there was a steep learning curve for both users. User also reported not being able to draw a precise floorplan on a small mobile screen. Most of all, both users mentioned that the drawing floor plan process was “long and tedious”.</span></p>
-                        <p class = "project-desc">Thus,  <span style="color:#00AAA8">we changed the “draw floor plan” to “find my apartment”</span>, which leaves most of the flooplan acquision job to the app and thus ease the process with less time. </span></p> -->
+                        <p class = "project-desc">We Initially had users draw their own floor plans in two ways. The feedback we got included:<br>
+                          <span style="color:#E0334D">- Although users learned how to draw rooms in the feedback session, there was a steep learning curve for both users.<br>
+                          - User also reported not being able to draw a precise floorplan on a small mobile screen.<br>
+                          - Most of all, both users mentioned that the drawing floor plan process was “long and tedious”.</span></p>
+                        <p class = "project-desc"><span style="font-weight: 600">Thus, we changed the “draw floor plan” to “find my apartment”</span>, which leaves most of the flooplan acquision job to the app and thus ease the process. </span></p>
                         <img src="img/project1/iteration_one_1.png">
                         <div class="divide_40"></div>
-                        <p class = "project-desc"><span style="font-weight: 600">2. Home Page</span> <br></p>
-<!--                         <p class = "project-desc">The initial “Upload Your Floor Plan”, as reported by the users, have the following issues:
-                          <span style="color:#E0334D">- It shows different rooms in different color borders, which was not immediately obvious to the user.
-                          - It asks the user to confirm the rooms one by one, which was hard to see and boring. 
-                          - If the app recognize a room wrong, there is again the issue of difficulty drawing a room from the user’s end (especially the one with irregular shape).
-                          - It asks the user to manually check with doors and windows, and the buttons are too small to click on a mobile screen. 
-                          - It asks the user to manually put in room names.</span>
-                          With all the user feedback, we decided that leave the job of confirming and altering floor plan to the user comproised usability to a great extent. Thus, we did research and found that the room recognition precision can go above 95%. Thus, we leave the room, doors and windows recognition to the app completely, show the rooms in different color areas to be distinguished easily, and allow the user to tap on each room to confirm details and change the room names. If the recognition is incorrect, we simply tell the user to send their floor plan picture to us for later fix.
-
-                           </span></p> -->
-                        <img src="img/project1/iteration_one_2.png">
-                        <div class="divide_40"></div>
-                        <p class = "project-desc"><span style="font-weight: 600">3. Demo List Page</span> <br></p>
-                        <img src="img/project1/iteration_one_3.png">
-                        <div class="divide_40"></div>
-                        <p class = "project-desc"><span style="font-weight: 600">4. Completion of Appointment Page</span> <br></p>
-                        <img src="img/project1/iteration_one_4.png">
+                        <p class = "project-desc"><span style="font-weight: 600">2. Other iterations</span> <br></p>
+                        <p class = "project-desc"><a target = "_blank" href="project1_detail.html#Iteration_1"><span style="color:#4A90E2">Check the details of the Prototype Iteration One.</span></a></p>
                         <div class="divide_20"></div>
 
                         <hr>
 
                         <div class="divide_40"></div>
                         <h3 class="overview_subtitle" id="Benchmarking">Usability Benchmarking Test</h3>
-<!--                         <p class = "project-desc">We had already evaluated the prototype amongst ourselves and experts. It was important to get users from our intended user group, i.e. student gamers and casual gamers in the corporate, to try it out and see if they found it usable. We recruited 5 participants from both schools and corporates who were gamers to help us evaluate the prototype. Usability benchmarking allowed us to collect both qualitative and quantative data to evaluate and improve our prototype.</p> -->
+                        <p class = "project-desc">After the first iteration, we decided to test the usability in a more formal and systematic way. We recruited 3 newly graduated students to help us conduct the benchmarking test and finished the SUS evaluation.</p>
+                          <p class = "project-desc"><span style="font-weight: 600">Their feedback was used for the extra Prototype Iteration Two done by Yuyan Duan and me after the project was over in the class.</span></p>
                       </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <img src="img/project1/benchmarking_1.png">
@@ -391,43 +393,33 @@
                         <hr>
 
                         <div class="divide_40"></div>
-                        <h3 class="overview_subtitle" id="Iteration_2">Prototype Iteration Two</h3>
-                        <p class = "project-desc"><span style="font-weight: 600">1. Survey - Budget Page</span> <br></p>
+                        <h3 class="overview_subtitle" id="Iteration_2">Iteration Two</h3>
+                        <p class = "project-desc"><span style="font-weight: 600">1. Add a layout - Sequence</span> <br></p>
+                        <p class = "project-desc"><span style="color:#E0334D">2 of 3 users reported, they thought that if creating floor plan was an necessary process, we should make it the first thing that users saw after logging into the app and guide them through the process. </span></p>
+                        <p class = "project-desc"><span style="font-weight: 600">Thus, we let "Add a layout" step appear immediately after the users logged in to avoid future trouble. 
+                        </span></p>
                         <img src="img/project1/iteration_two_1.png">
                         <div class="divide_40"></div>
-                        <p class = "project-desc"><span style="font-weight: 600">2. Survey - Multiple Choices</span> <br></p>
-                        <img src="img/project1/iteration_two_2.png">
-                        <div class="divide_40"></div>
-                        <p class = "project-desc"><span style="font-weight: 600">3. Survey - Result</span> <br></p>
-                        <img src="img/project1/iteration_two_3.png">
-                        <div class="divide_40"></div>
-                        <p class = "project-desc"><span style="font-weight: 600">4. Demo Detail Page</span> <br></p>
-                        <img src="img/project1/iteration_two_4.png">
-                        <div class="divide_40"></div>
-                        <p class = "project-desc"><span style="font-weight: 600">5. Completion of Appointment Page</span> <br></p>
-                        <img src="img/project1/iteration_two_5.png">
-                        <div class="divide_40"></div>
-                        <p class = "project-desc"><span style="font-weight: 600">4. Demo Detail Page</span> <br></p>
-                        <img src="img/project1/iteration_two_6.png">
-                        <div class="divide_40"></div>
-                        <p class = "project-desc"><span style="font-weight: 600">5. Completion of Appointment Page</span> <br></p>
-                        <img src="img/project1/iteration_two_7.png">
+                        <p class = "project-desc"><span style="font-weight: 600">2. Other iterations</span> <br></p>
+                        <p class = "project-desc"><a target = "_blank" href="project1_detail.html#Iteration_2"><span style="color:#4A90E2">Check the details of the Prototype Iteration Two.</span></a></p>
                         <div class="divide_20"></div>
 
                         <hr>
 
                         <div class="divide_40"></div>
                         <h3 class="overview_subtitle" id="Final_design">Final Design</h3>
-<!--                         <p class = "project-desc">This semester project finished after we conducted the benchmarking test. Based on the feedback from the benchmarking test, I iterated again and alterd a lot of design details myself.</p> -->
+                        <p class = "project-desc"><span style="font-weight: 600">AI Planner is a mobile app that helps newly graduated college students furnish their small urban-city apartments in an efficient and satisfactory way. Main features include:<br>
+                        - Users could add their dimensionally accurate layouts in 3 different ways.<br>
+                        - Recommendation system could help users create aesthetically customized plans within their own budgets.<br>
+                        - Users could also design their own furnishing plans based on their floor plans.<br>
+                        - All the furniture could be bought in the app and delivered to users' apartments.</span></p>
+                        <p class = "project-desc"><span style="font-weight: 600">1. Screens</span> <br></p>
+                        <p class = "project-desc"><a target = "_blank" href="project1_detail.html#Final_design"><span style="color:#4A90E2">Check all the screens here.</span></a></p>
                         <img src="img/project1/final_design.png">
-                        <div class="divide_20"></div>
-
-                        <hr>
-
-                        <div class="divide_40"></div>
-                        <h3 class="overview_subtitle" id="User_flow">User Flow</h3>
-<!--                         <p class = "project-desc">This semester project finished after we conducted the benchmarking test. Based on the feedback from the benchmarking test, I iterated again and alterd a lot of design details myself.</p> -->
-                        <img src="img/project1/user_flow.png">
+                        <div class="divide_80"></div>
+                        <p class = "project-desc"><span style="font-weight: 600">2. User flow</span> <br></p>
+                        <p class = "project-desc"><a target = "_blank" href="project1_detail.html#User_flow"><span style="color:#4A90E2">Check the details of user flow here.</span></a></p>
+                        <img src="img/project1_detail/user_flow.png">
                         <div class="divide_20"></div>
 
                         <hr>
@@ -435,10 +427,37 @@
                         <div class="divide_40"></div>
                         <h3 class="overview_subtitle" id="Final_prototype">Final Prototype</h3>
                         <p class = "project-desc">Feel free to play with it and share your feedback with us.</p>
-                        <div><iframe class="invision" style = "transform: scale(0.9)" height="930" src="https://invis.io/AYF7VPC76" frameborder="0" allowfullscreen></iframe></div>
+                        <div><iframe class="invision" style = "transform: scale(0.9)" height="930" src="https://invis.io/AJFFVGETSP6" frameborder="0" allowfullscreen></iframe></div>
 
                       </div>
 
+                  </div>
+
+                  <div class="divide_20"></div>
+
+                  <div class="nav_bottom row">
+                    <div class="col-6 text-left">
+<!--                       <a href="/ios/human-interface-guidelines/controls/text-fields/" class="block">
+
+                        <span class="router-copy two-lines">
+                          <h4>
+                            <small>Previous</small>
+                            <span class="icon icon-chevronleft"></span> Text Fields
+                          </h4>
+                        </span>
+
+                      </a> -->
+                    </div>
+                    <div class="col-6 text-right right">
+                        <a href="project2.html" class="block">
+                        <span>
+                          <h4>
+                            <small>Next</small>
+                            BestBuy Demo <span><img class="next_bottom" src="img/next_bottom.svg"></span>
+                          </h4>
+                        </span>
+                      </a>
+                    </div>
                   </div>
               </div>
         </div>
@@ -488,6 +507,13 @@
                 }
             });
         });
+
+        $('body').scrollspy({ target: '.sidebar' });
+        $('ul.nav li a').bind('click', function(e) {
+          e.preventDefault();
+          $('html,body').animate({scrollTop: $(this.hash).offset().top});
+        });
+
     });
     </script>
     <!-- Plugin JavaScript

@@ -1,1 +1,2 @@
-# portfolio-2.0
+# portfolio
+The portfolio of Scott Sun

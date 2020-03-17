@@ -1,9 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112307082-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112307082-1');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="img/favicon.ico"/>
     <title>Huaiwei Sun | Philosophia</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -12,11 +23,16 @@
     <!-- Navigation Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- full page scroll -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
     <!-- Loaded font -->
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
+<style>
+@import url('https://fonts.googleapis.com/css?family=Abel|Alegreya+Sans+SC|Asap+Condensed|Assistant|Average+Sans|Cabin|Carme|Catamaran:300,400|Didact+Gothic|Dosis|Gafata|Harmattan|Hind+Guntur|Hind+Siliguri|Jaldi|Julius+Sans+One|Kite+One|Lekton|Mada:200,400|Mako|Maven+Pro|Molengo|Muli:200,400|NTR|Noto+Sans+JP|Noto+Serif+JP|Noto+Serif+KR|Orienta|Oxygen|PT+Sans|Pontano+Sans|Questrial|Quicksand|Rajdhani:300,400|Raleway:100,400|Ruluko|Source+Sans+Pro:200,200i,300,300i,400|Timmana|Varela|Yantramanav:100,400');
+</style>
+
   </head>
-  <body>
+  <body id="index">
 
     <div id="fullpage">
       <div class="section">
@@ -26,36 +42,45 @@
         <div class="container-fluid">
             <!-- Navigation -->
             <div id="header">
-              <div class="header-content clearfix col-lg-12">
-                <a class="logo" href="#"><img src="img/logo.png" alt="Huaiwei Sun"></a>
-                <nav class="navigation" role="navigation">
-                  <ul class="primary-nav">
-                    <li><a href="#" style="color: #FF9C21;">Projects</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                    <li><a target ="_blank" href="resources/resume.pdf">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-                </nav>
-                <a href="#" class="nav-toggle">Menu<span></span></a>
+              <div class="row">
+                <div class="header-content clearfix col-lg-12">
+                  <a class="logo" href="#"><img src="img/logo-home.png" alt="Huaiwei Sun"></a>
+                  <nav id='navigation-home' class="navigation" role="navigation">
+                    <ul class="primary-nav">
+                      <li><a href="#" style="color: #FF9C21;">Projects</a></li>
+                      <li><a href="profile.html">Profile</a></li>
+                      <li><a href="resume.html">Resume</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                  </nav>
+                  <a href="#" class="nav-toggle">Menu<span></span></a>
+                </div>
               </div>
             </div>
             <!-- Animation and intro -->
             <div class = "onesection">
-              <div class ="col-lg-12"  >
+              <div class ="col-lg-12 introduction_laptop"  >
                 <div id="animation"><canvas id="canvas"></canvas></div>
               </div>
-              <div class="fade-in">
+              <div class="fade-in introduction_laptop">
                 <div class="col-lg-12 intro">
                   <p class="lead">
                     Connecting the dots through reading, thinking and creating
                   </p>
-                  <p class="lead">Product Creator | Philosophia, love of wisdom</p>
-                  <p class="lead"> I'm <a style = "color:#FF9C21; font-weight: 900" href="https://www.linkedin.com/in/scottsun94/" target="_blank" >Huaiwei Sun</a>, Nice to meet you :)</p>
+                  <p class="lead">Product Designer | Philosophia</p>
+                  <p class="lead"> I'm <a style = "color:#FF9C21; font-weight: 900" href="https://www.linkedin.com/in/scottsun94/" target="_blank" >Huaiwei Sun</a>, Nice to meet you : )</p>
                 </div>
                 <div class="arrow_down">
                   <img  src="img/arrow.png">
                 </div>
               </div>
+
+              <div class="col-lg-12 introduction_mobile">
+                <p class="intro_mobile_1">Hi, I'm Huaiwei Sun.</p>
+                <p class="intro_mobile_2">Nice to meet you :)</p>
+                <p class="intro_mobile_3">I'm an intentional product designer who loves philosophy and keeps connecting the dots through reading, thinking and creating!</p>
+              </div>
+
             </div>
           </div>
       </div>
@@ -65,13 +90,13 @@
           <div class = "project1" >
             <div class="container">
               <div class="row">
-                <div class="col-lg-7 col-md-5 col-sm-3" style="border: 0;">
+                <div class="col-2 col-lg-7 col-md-5 col-sm-3" style="border: 0;">
                 </div>
-                <div class="col-lg-5 col-sm-9 col-md-7">
+                <div class="col-9 col-lg-5 col-sm-9 col-md-7">
                   <a  href="project1.html" target="_blank">
                     <div id = "proj1_label" class = "proj_label">
                       <p class="proj_name">AI Planner</p>
-                      <p class="proj_intro">The biggest activity-finding platform in Shanghai Jiao Tong University</p>
+                      <p class="proj_intro">An intelligent solution helping newly graduated college students furnish apartments in urban cities.</p>
                       <div id = "proj1_shortline"></div>
 
                       <p class="proj_tag">
@@ -92,12 +117,12 @@
         <div class="container-fluid">
           <div class = "project2">
             <div class="container">
-              <div class ="row">   
-                <div class="col-lg-5 col-sm-9 col-md-7">
+              <div class ="row"> 
+                <div class="col-9 col-lg-5 col-sm-9 col-md-7">
                   <a  href="project2.html" target="_blank">
                     <div id = "proj2_label" class = "proj_label">
                       <p class="proj_name">BestBuy Demo</p>
-                      <p class="proj_intro">The demo appointment and survey system for BestBuy.com</p>
+                      <p class="proj_intro">A demo appointment and survey system intended to improve the gaming mice purchase experience for BestBuy.</p>
                       <div id = "proj2_shortline"></div>
 
                       <p class="proj_tag">
@@ -108,7 +133,7 @@
                     
                    </a>
                 </div>
-                <div class="col-lg-7 col-md-5 col-sm-3" style="border: 0;">
+                <div class="col-1 col-lg-7 col-md-5 col-sm-3" style="border: 0;">
                 </div>
               </div>
             </div>
@@ -122,13 +147,13 @@
           <div class = "project3">
             <div class="container">
               <div class="row">
-                <div class="col-lg-7 col-md-5 col-sm-3" style="border: 0;">
+                <div class="col-2 col-lg-7 col-md-5 col-sm-3" style="border: 0;">
                 </div>
-                <div class="col-lg-5 col-sm-9 col-md-7">
+                <div class="col-9 col-lg-5 col-sm-9 col-md-7">
                   <a  href="project3.html" target="_blank">
                     <div id = "proj3_label" class = "proj_label">
-                      <p class="proj_name">AI Planner</p>
-                      <p class="proj_intro">The biggest activity-finding platform in Shanghai Jiao Tong University</p>
+                      <p class="proj_name">Tong Qu</p>
+                      <p class="proj_intro">The biggest event-finding platform in Shanghai Jiao Tong University</p>
                       <div id = "proj3_shortline"></div>
                       <p class="proj_tag">
                         Read More
@@ -148,9 +173,9 @@
           <div class = "intern">
             <div class="container">
               <div class="row"> 
-                <div class="col-lg-7 col-md-5 col-sm-3" style="border: 0;">
+                <div class="col-1 col-lg-7 col-md-5 col-sm-3" style="border: 0;">
                 </div>
-                <div class="col-lg-5 col-sm-9 col-md-7">
+                <div class="col-11 col-lg-5 col-sm-9 col-md-7">
                   <a  href="http://www.yitutech.com/en/corebusiness/8.html" target="_blank">
                     <div id = "intern_label" class = "intern_label">
                       <p class="intern_name">UX Design Intern<br>YITU, 2017</p>
@@ -164,7 +189,7 @@
                 </div>
                 <div class="col-lg-12 footer">
                     <span class="signature-1">
-                      <a href="https://www.linkedin.com/in/scottsun94/" style = "color: rgb(200,200,200);">© 2017 Huaiwei Sun</a>
+                      <a href="https://www.linkedin.com/in/scottsun94/" style = "color: rgb(200,200,200);">© 2018 Huaiwei Sun</a>
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </span>
                     <span class="signature-2">
@@ -286,7 +311,9 @@
     <script src="js/animation.js"></script>
     <!-- Fade in animation -->
     <script src="js/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/jquery.fullpage.js"></script>
+    <!-- Disable Hover on mobile -->
+    <script type="text/javascript" src="js/hover_fix_mobile.js"></script>
         <!-- customized js for scroll & fadein effect -->
     <script type="text/javascript">
       $(document).ready(function() {

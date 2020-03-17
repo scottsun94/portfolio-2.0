@@ -4,6 +4,7 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto%20Slab:300,400,500,600,700);
 @import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
 /* ------------------------------------------------------------------------------
 Genral css across pages
 -------------------------------------------------------------------------------*/
@@ -17,7 +18,11 @@ body {
   min-height: 100%;
   margin: 0;
   padding-bottom: 3rem;
-  background-color: white;
+}
+#index{
+background-color: #2b4162;
+background-image: linear-gradient(340deg, #141E30 0%, #12100e 74%);
+
 }
 .container-fluid {
   padding-right: 15px;
@@ -58,6 +63,7 @@ ul li {
 	-webkit-transition: padding 0.3s;
 	transition: padding 0.3s;
 }
+
 #header .logo {
 
   float: left;
@@ -71,10 +77,10 @@ ul li {
 	/*padding: 25px 0;*/
 }
 #header.fixed .nav-toggle {
-	top: 18px;
+	top: 45px;
 }
 .logo img {
-	width:9vw;
+	width:7vw;
 }
 .navigation.open {
 	opacity: 0.9;
@@ -94,7 +100,15 @@ ul li {
 	display: inline-block;
 }
 .navigation a {
-	color: rgba(30, 30, 30, 0.75);
+	color: rgba(100, 100, 100, 0.75);
+	font-size: 13px;
+	font-weight: 400;
+	margin-left: 40px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+#navigation-home a {
+	color: rgba(230, 230, 230, 0.75);
 	font-size: 13px;
 	font-weight: 400;
 	margin-left: 40px;
@@ -251,20 +265,20 @@ project page
 
 .intro{
   /*width: 100%;*/
-  margin-top: 1vw;
+  margin-top: 1.5vw;
   text-align: center;
   color:rgb(30, 30, 30);
 }
 
 .lead{
-  font-family: 'Cutive Mono', monospace;
-  font-size: 1.8vw;
-  font-weight:800;
-  color:rgb(30, 30, 30);
+  font-family: 'Kite One','Gafata','Mada', 'Jaldi','Alegreya Sans SC','Julius Sans One','Yantramanav','Maven Pro','Muli', 'PT Sans','Raleway','Source Sans Pro','Abel','Codystar','Monoton','Comfortaa','Roboto', sans-serif;
+  font-size: 1.1vw;
+  font-weight:200;
+  color:rgb(230, 230, 230);
 }
 .arrow_down{
 	text-align: center;
-	margin-top: 3vw;
+	margin-top: 1.5vw;
 }
 
 /*nodes garden animation*/
@@ -275,10 +289,31 @@ project page
 #canvas{
   margin:0 auto;
   margin-top: 2.5vw;
-  margin-bottom: 2.5vw;
+  margin-bottom: 0.5vw;
+  margin-left: 0vw;
+  margin-right: 0vw;
   display: block;
 }
+.introduction_mobile{
+  display: none;
+}
 
+.introduction_mobile .intro_mobile_1{
+  margin-top: 20vh;
+  color: rgb(220,220,220); 
+  font-size: 10vw;
+  font-weight: 900;
+}
+.introduction_mobile .intro_mobile_2{
+  color: rgb(220,220,220); 
+  font-size: 6vw;
+  font-weight: 600;
+}
+.introduction_mobile .intro_mobile_3{
+  color: rgb(120,120,120); 
+  font-size: 5vw;
+  font-weight: 300;
+}
 
 
 .proj_name{
@@ -588,11 +623,24 @@ project page
 profile page
 -------------------------------------------------------------------------------*/
 .introduction{
-  margin-left: 6vw;
+  margin-left: 5vw;
   margin-top: 2vw;
 }
 .static_profile{
 	display: none;
+}
+/* ------------------------------------------------------------------------------
+resume page
+-------------------------------------------------------------------------------*/
+.a3{
+    font-family: "Roboto",arial,sans-serif;
+    text-decoration: none;
+    color: rgb(180,180,180);
+    border-bottom: 2px dotted #ee7a2e;
+    margin: 0 auto;
+  }
+.a3:hover{
+  color:#ee7a2e;
 }
 /* ------------------------------------------------------------------------------
 Contact page
@@ -624,6 +672,7 @@ Contact page
   margin-bottom: 25pt;
 }
 .letter .para_3{
+  color:rgb(10,10,10); 
   font-size: 1.2vw;
   font-weight: 600;
   margin-bottom: 25pt;
@@ -659,10 +708,17 @@ Contact page
 }
 
 
-@media screen and (max-width: 767px) and (min-width: 320px) {
+@media screen and (max-width: 767px) and (min-width: 320px){
     .fh5co-nav-toggle {
         opacity: 1;
         visibility: visible;
+    }
+
+    .introduction_laptop {
+      display: none;
+    }
+    .introduction_mobile{
+      display: block;
     }
 
     div#tabs{
@@ -673,7 +729,7 @@ Contact page
         height: 40px;
         line-height: 27px;
         font-size: 17px;
-        font-family:'PT Sans', "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-family:"Helvetica Neue","Helvetica","Arial",sans-serif;
     }
     div#tabs a#after:after, div#tabs a#before:before{
         vertical-align: -10%;
@@ -686,8 +742,9 @@ Contact page
 
     h2.page-header{
         
-        font-size: 25px;
-        font-family: 'PT Sans', "Roboto", "Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-size: 22px;
+        font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+        font-weight: 600;
     }
 
     h2.update{
@@ -699,7 +756,7 @@ Contact page
     }
 
     h3.overview_subtitle{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     h3.project_subtitle{
@@ -752,51 +809,55 @@ Contact page
     }
 
     .logo img {
-		width:15vw;
+		width:24vw;
 	}
 
 	.nav-toggle {
-	display: none;
-	height: 6vw;
-	width:  6vw;
-	overflow: hidden;
-	position: fixed;
-	right: 5%;
-	text-indent: 100%;
-	white-space: nowrap;
-	z-index: 99999;
-	-moz-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+  	display: none;
+  	height: 9vw;
+  	width:  9vw;
+  	overflow: hidden;
+  	position: fixed;
+  	right: 5%;
+  	text-indent: 100%;
+  	white-space: nowrap;
+  	z-index: 99999;
+  	-moz-transition: all 0.3s;
+  	-o-transition: all 0.3s;
+  	-webkit-transition: all 0.3s;
+  	transition: all 0.3s;
 	}
 
 	.nav-toggle span {
-	background-color: #fff;
-	bottom: auto;
-	display: inline-block;
-	height: 2px;
-	left: 50%;
-	position: absolute;
-	right: auto;
-	top: 50%;
-	width: 16px;
-	z-index: 10;
-	-moz-transform: translateX(-50%) translateY(-50%);
-	-ms-transform: translateX(-50%) translateY(-50%);
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
+  	background-color: #fff;
+  	bottom: auto;
+  	display: inline-block;
+  	height: 2px;
+  	left: 50%;
+  	position: absolute;
+  	right: auto;
+  	top: 50%;
+  	width: 16px;
+  	z-index: 10;
+  	-moz-transform: translateX(-50%) translateY(-50%);
+  	-ms-transform: translateX(-50%) translateY(-50%);
+  	-webkit-transform: translateX(-50%) translateY(-50%);
+  	transform: translateX(-50%) translateY(-50%);
 	}
+
+  .navigation {
+    padding-right: 0pt;
+  }
 
 	.intro{
 	  /*width: 100%;*/
-	  margin-top: 10vw;
+	  margin-top: 12vw;
 	}
 
 	.lead{
 	  font-family: 'Cutive Mono', monospace;
 	  font-size: 2.6vw;
-	  font-weight:800;
+	  font-weight:600;
 	  color:rgb(30, 30, 30);
 	}
 	.arrow_down{
@@ -812,28 +873,86 @@ Contact page
 	.introduction{
 	  margin-left: 4vw;
 	  margin-top: 1vw;
+    display: none;
 	}
 
 	.letter{
 		margin-top: 1vw;
+    padding-left: 20px;
+    padding-right: 20px;
 	}
 	.letter .para_1{
 	  padding-top: 5pt;
-	  font-size: 2.5vw;
+	  font-size: 3.5vw;
 	  margin-bottom: 25pt;
 	}
 	.letter .para_2{
-	  font-size: 2.5vw;
+	  font-size: 3.5vw;
 	  margin-bottom: 25pt;
 	}
 	.letter .para_3{
-	  font-size: 2.5vw;
+	  font-size: 3.5vw;
 	  font-weight: 600;
 	  margin-bottom: 25pt;
 	}
 	.letter .photo{
 		margin-bottom: 3vw;
 	}
+
+  .project1{
+  background-image: url("../img/proj1_background_mobile.png");
+  }
+  .project2{
+    background-image: url("../img/proj2_background_mobile.png");
+  }
+  .project3{
+    background-image: url("../img/proj3_background_mobile.png");
+  }
+  .intern{
+    background-image: url("../img/intern_background_mobile.png");
+  }
+
+  .proj_label{
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top: 50vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.9rem;
+    padding-top: 1.2rem;
+    color: #4A4A4A;
+    background-color: white;
+    box-shadow: 0px 5px 30px rgba(0,0,0,0.5);
+  }
+
+  .proj_name{
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+  }
+  .proj_intro{
+    font-size: 0.9rem;
+
+  }
+  .proj_tag{
+    font-size: 0.9rem;
+  }
+
+  .intern_label{
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin-top:45vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.8rem;
+    padding-top: 1.2rem;
+    color: #4A4A4A;
+    background-color: white;
+    box-shadow: 0px 5px 30px rgba(0,0,0,0.5);
+  }
+  .intern_name{
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 900;
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 767px){
