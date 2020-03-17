@@ -2,12 +2,19 @@
 var canvas = document.querySelector('canvas'),
       ctx = canvas.getContext('2d'),
       colorDot = 'rgb(230,230,230)',
-      color = 'rgb(250,250,250)';
+      color = 'rgb(250,250,250)',
+      colorListUnit = ['rgb(250,250,250)'],
+      colorList=[],
+      colorNum=90;
+  for (var i = colorNum-1; i >= 0; i--) {
+    colorList = colorList.concat(colorListUnit);
+  }
+  colorDots = colorList.concat(['rgb(120,120,120)']);
   canvas.width = window.innerWidth/1;
-  canvas.height = window.innerHeight/1.6;
+  canvas.height = window.innerHeight/1.8;
   canvas.style.display = 'block';
   ctx.fillStyle = colorDot;
-  ctx.lineWidth = .2;
+  ctx.lineWidth = 0.2;
   ctx.strokeStyle = color;
 
 var canvasDots = function() {
@@ -18,9 +25,9 @@ var canvasDots = function() {
   };
 
   var dots = {
-    nb: 350,
-    distance: 50,
-    d_radius: 120,
+    nb: 250,
+    distance: 70,
+    d_radius: 110,
     array: []
   };
 
@@ -38,6 +45,7 @@ var canvasDots = function() {
     create: function(){
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+      ctx.fillStyle = colorDots[Math.floor(Math.random() * (colorNum+1))];
       ctx.fill();
     },
 
@@ -75,7 +83,7 @@ var canvasDots = function() {
               ctx.closePath();
             } else if ((i_dot.x - mousePosition.x) < dots.d_radius/2 && (i_dot.y - mousePosition.y) < dots.d_radius/2 && (i_dot.x - mousePosition.x) > - dots.d_radius/2 && (i_dot.y - mousePosition.y) > - dots.d_radius/2) {
               ctx.beginPath();
-              ctx.strokeStyle = 'rgb(180,180,180)';
+              ctx.strokeStyle = 'rgb(120,120,120)';
               ctx.moveTo(i_dot.x, i_dot.y);
               ctx.lineTo(j_dot.x, j_dot.y);
               ctx.stroke();
@@ -98,6 +106,8 @@ var canvasDots = function() {
     ctx.clearRect(0, 0, 10000, 10000);
 
     window.onresize = function(){
+      canvas.width = window.innerWidth/1;
+      canvas.height = window.innerHeight/1.8;
       for(i = 0; i < dots.nb; i++){
         dots.array[i] = new Dot();
       }
@@ -119,38 +129,45 @@ var canvasDots = function() {
 
     //left, top
     if(mousePosition.x > 0 * canvas.width && mousePosition.x < 0.4 * canvas.width && mousePosition.y > 0.05 * canvas.height && mousePosition.y < 0.3 * canvas.height){
-      ctx.font = "16px Kite One";
-      ctx.fillText("Philosophy",mousePosition.x+20,mousePosition.y+30);
+      ctx.font = "600 16px Kite One";
+      ctx.fillStyle = "#FFFFFF";
+      ctx.fillText("Philosophy",mousePosition.x+20,mousePosition.y+10);
     }
     //middle, middle
     if(mousePosition.x > 0.35 * canvas.width && mousePosition.x < 0.65 * canvas.width && mousePosition.y > 0.4 * canvas.height && mousePosition.y < 0.6 * canvas.height){
-      ctx.font = "16px Kite One";
-      ctx.fillText("Design",mousePosition.x+20,mousePosition.y+30);
+      ctx.font = "600 16px Kite One";
+      ctx.fillStyle = "#FFFFFF";
+      ctx.fillText("Design",mousePosition.x+20,mousePosition.y+10);
     }
     //right, top
     if(mousePosition.x > 0.7 * canvas.width && mousePosition.x < 1 * canvas.width && mousePosition.y > 0.05 * canvas.height && mousePosition.y < 0.3 * canvas.height){
-      ctx.font = "16px Kite One";
-      ctx.fillText("Psychology",mousePosition.x+20,mousePosition.y+30);
+      ctx.font = "600 16px Kite One";
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillText("Psychology",mousePosition.x+20,mousePosition.y+10);
     }
     //left, middle
     if(mousePosition.x > 0.05 * canvas.width && mousePosition.x < 0.3 * canvas.width && mousePosition.y > 0.4 * canvas.height && mousePosition.y < 0.6 * canvas.height){
-      ctx.font = "16px Kite One";
-      ctx.fillText("Economics",mousePosition.x+20,mousePosition.y+30);
+      ctx.font = "600 16px Kite One";
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillText("Economics",mousePosition.x+20,mousePosition.y+10);
     }
     //right, middle
     if(mousePosition.x > 0.7 * canvas.width && mousePosition.x < 0.95 * canvas.width && mousePosition.y > 0.4 * canvas.height && mousePosition.y < 0.6 * canvas.height){
-      ctx.font = "16px Kite One";
-      ctx.fillText("Coding",mousePosition.x+20,mousePosition.y+30);
+      ctx.font = "600 16px Kite One";
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillText("Coding",mousePosition.x+20,mousePosition.y+10);
     }
     //left, bottom
     if(mousePosition.x > 0 * canvas.width && mousePosition.x < 0.4 * canvas.width && mousePosition.y > 0.7 * canvas.height && mousePosition.y < 0.9 * canvas.height){
-      ctx.font = "16px Kite One";
-      ctx.fillText("Entrepreneurship & Ownership",mousePosition.x+20,mousePosition.y+30);
+      ctx.font = "600 16px Kite One";
+      ctx.fillStyle = '#FFFFFF';
+      ctx.fillText("Entrepreneurship & Ownership",mousePosition.x+20,mousePosition.y+10);
     }
     //right, bottom
     if(mousePosition.x > 0.7 * canvas.width && mousePosition.x < 1 * canvas.width && mousePosition.y > 0.7 * canvas.height && mousePosition.y < 0.9 * canvas.height){
-      ctx.font = "16px Kite One";
-      ctx.fillText("History",mousePosition.x+20,mousePosition.y+30);
+      ctx.font = "600 16px Kite One";
+      ctx.fillStyle = '#FFFFFF' ;
+      ctx.fillText("History",mousePosition.x+20,mousePosition.y+10);
     }
   }
 

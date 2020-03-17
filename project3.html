@@ -19,10 +19,10 @@
     <!-- Bootstrap core CSS -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/responsive2.css"> -->
-    <!-- main CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">    
+    <!-- Css for configuring the layout of sidebar & main contents-->
     <link rel="stylesheet" href="css/landing.css">
+    <!-- main CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/project3.css">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
@@ -38,29 +38,29 @@
         <a href="index.html" class="btn btn-back" role="button">&#8249; Projects</a>
         
         <p class = "product_name">Tong Qu</p>
-        <nav id="fh5co-main-menu" role="navigation">
-          <ul class="nav">
+        <nav id="fh5co-main-menu">
+          <ul class="nav" role='Navigation'>
             <li><a href="#Overview">Overview</a></li>
               <li><a href="#About" class="sub">About Tong Qu</a></li>
-              <li><a href="#Objective" class="sub">Objective</a></li>
+              <li><a href="#Problem" class="sub">Problem</a></li>
               <li><a href="#Process" class="sub">Process</a></li>
-            <li class="font_padding"><a href="#Research">Formative Research</a></li>
-              <li><a href="#Plan" class="sub">Research Plan</a></li>
-              <li><a href="#Feedback" class="sub">Existing User Feedback</a></li>
+            <li class="font_padding"><a href="#Discover">Discover</a></li>
+              <li><a href="#Research_overview" class="sub">Overview of Research</a></li>
+              <li><a href="#Research_detail" class="sub">Details of Research</a></li>
+<!--               <li><a href="#Feedback" class="sub">Existing User Feedback</a></li>
               <li><a href="#Analytics" class="sub">App Analytics</a></li>
               <li><a href="#Interviews" class="sub">Semi-structured Interviews</a></li>
-              <li><a href="#Competitive" class="sub">Competitive Analysis</a></li>
+              <li><a href="#Competitive" class="sub">Competitive Analysis</a></li> -->
+            <li class="font_padding"><a href="#Define">Define</a></li>
               <li><a href="#Findings" class="sub">Synthesis of Findings</a></li>
               <li><a href="#Personas" class="sub">Personas</a></li>
               <li><a href="#Requirements" class="sub">User Requirements</a></li>
-
             <li class="font_padding"><a href="#Design">Design Iteration</a></li>
               <li><a href="#Information_Architecture" class="sub">Information Architecture</a></li>
               <li><a href="#Wireframes" class="sub">Lofi Wireframes</a></li>
               <li><a href="#Prototype" class="sub">Hifi Prototype & Iterations</a></li>
               <li><a href="#Final_Design" class="sub">Final Design</a></li>
               <li><a href="#Use_Case" class="sub">Use Case</a></li>
-
             <li class="font_padding"><a href="#Implementation">IMPLEMENTATION</a></li>
               <li><a href="#Development" class="sub">Development</a></li>
               <li><a href="#Launch" class="sub">Launch and Publicity</a></li>
@@ -73,7 +73,7 @@
 
       <!-- Main Content -->
   		<div id="fh5co-main">
-              <div class="fh5co-narrow-content">
+              <div  class="fh5co-narrow-content">
                       <div id="Overview">
                         <div>
                           <img src="img/project3/overview.png">
@@ -90,136 +90,111 @@
                               <img style = "width:100%" src="img/project3/achievement.png">
 
                               <div class = "divide_40"></div>
-
-                              <h3 class="overview_subtitle" id="Objective">Objective</h3>
-                              <p class="project-desc">Tong Qu's iOS app hasn’t been updated for more than one year since previous iOS developers graduated. A lot of bugs came out and students complained about its malfunction and abandoned using it.<br></p>
-                               
-                              <p class="project-desc"><span style="font-weight: 600">
-                                Therefore, our goal was to develop a new iOS version and improve the overall user experience.</span></p>
-                              <div class = "divide_40"></div>
-                              <h3 class="overview_subtitle " id="Process">Process</h3>
-                              <img style = "width:100%" src="img/project3/process.png">
+                              <div class = "bg_grey">
+                                <h3 class="overview_subtitle" id="Problem">Problem</h3>
+                                <p class="project-desc">Tong Qu's iOS app hasn’t been updated for more than one year since previous iOS developers graduated. A lot of bugs came out and students complained about its malfunction and abandoned using it.<br></p>
+                                 
+                                <p class="project-desc"><span style="font-weight: 600">
+                                  Our goal was to redesign Tong Qu to provide a more efficient and enjoyable event-finding experience in Shanghai Jiao Tong University.</span></p>
+                              </div> 
                               <div class="divide_40"></div>
                           </div>
-
                           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                              <h3 class="overview_subtitle">My Role</h3>
-                              <p class="project-desc">1.In the formative research part, I collected user feedback and analytics data, prepared the plan and questions for the semi-structured interview and conducted competitive analysis. Then I took part in the analysis of our data, distilled the user requirements from the findings and came up with the personas.<br>
-                                2.I led the discussion of allocating functions and adjusting information architecture in our team. I designed most of the lofi and hifi prototypes.<br>
-                              3.Upon finishing the design work, I collaborated with iOS developer Ruiyang Wang to actualize the design and launched it to the iOS store. I also assisted product manager Xiaofan Lu carry out the app promotion by designing introduction page for the app on Tong Qu's website.</p> 
+                              <h3 class="overview_subtitle">My Role</h3>     
+                              <p class="project-desc">
+                              1) Analyzed the data from iOS App Store and Apple Analytics, made semi-structured interview plan and conducted competitive analysis.<br>
+                              2) Synthesized the research results and came up with the personas to represent the insights.<br>
+                              3) Created the wireframes and mockups.<br>
+                              4) Led the feedback session and iterated on the design.<br>
+                              5) Prepared the specs and collaborated with iOS developer to implement the design.<br>
+                              6) Assisted PM promote the app update by designing promotion page and banner on Tong Qu's website.</p> 
                           </div>
-                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                              
-
+                          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">      
                               <h3 class="overview_subtitle">Duration</h3>
                               <p class="project-desc">November 2016 - April 2017</p>
 
                               <h3 class="overview_subtitle">Project Team</h3>
-                              <p class="project-desc">Huaiwei Sun | Xiaofan Lu | Ruiyang Wang | Sujun Zhang | Jiaxuan Wang | Lu Yan | Kangjie Chen</p>
-<!--                                <h3 class="overview_subtitle" id="Approach">Process</h3>
-                               <p class="project-desc">
-                                <b>1.User Research:</b><br>
-                               - Firstly, we collected and aggregated feedback from iOS stores, students, student club leaders. We also analyzed the data on Apple's App Analytics.<br>
-                               - We conducted semi-structured interviews with our classmates and friends and probed to understand what they expected from this app.<br>
-                               - Then, we did competitive analysis and learnt from similar apps on the market<br>
-                               - Fianlly, we aggregated all the notes and used spreadsheets to analyze them to get the findings. And we created personas and formed user requirements for the following design iterations.<br>
-                               <br>
+                              <p class="project-desc">Huaiwei Sun | Xiaofan Lu | Ruiyang Wang</p>
 
-                               
-                               <b>2.Desgin Iterations:</b><br>
-                               - We started from the allocation of functions based on users' needs. Then we redesigned the information architecture according to the functions we decided to keep.<br>
-                               - Then we explored the basic layout of the home screen and put forward different ideas. We evaluated them and picked one direction as a reference for the following design of wireframes and user flow of the whole app.<br>
-                               - We created the wireframes and the basic user flow. We conducted internal reviews and tweaked them based on team members' feedback.<br>
-                               <br>
-                               - Next, we zoomed in on the hifi prototypes and finished one more round of iteration according to internal feedback.<br>
-                               - Finally, we completed all the design of screens and user flow.<br>
-                               - Unfortunately, due to the limit of time and skills we have, we didn't conduct usability tests in this project. We should have done some benchmarking tests to evaluate the usability or accessibility of our app and had one more iteration.<br>
-                               <br>
-
-                               <b>3.Development:</b><br>
-                               - We export all the assets and specs and collaborated with iOS developers to actualize the design as accurate as possible.<br>
-                               - After the devlopment, we shipped it to the iOS store in April 2017. We also carried out promotion within the university and introduced the new version of Tong Qu.<br>
-                               - Finally, we used quantative from App Analytics and qualitative data from iOS store reviews to evaluate the impact of this update.
-                               <br>
-                               </p> -->
-                               <h3 class="overview_subtitle">Tools</h3>
-                               <p class="project-desc">Pen | Paper | Photoshop | Sketch</p>                       
+                              <h3 class="overview_subtitle">Tools</h3>
+                              <p class="project-desc">Photoshop | Sketch | inVision</p>                       
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                              <div class = "divide_40"></div>
+                              <div class="bg_grey">
+                                <h3 class="overview_subtitle " id="Process">Process</h3>
+                                <img style = "width:100%" src="img/project3/process.png">
+                              </div>
                           </div>
                       </div>
                       <div class="divide_80"></div>
                   </div>
 
-                  <div id="Research">
-                      <h2 class="page-header"><span style="color:#ff5722">02. </span>FORMATIVE RESEARCH</h2>
+                  <div id="Discover">
+                      <h2 class="page-header"><span style="color:#ff5722">02. </span>Discover</h2>
                       <hr>
                       <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <div class="divide_20"></div>
-                          <h3 class="overview_subtitle" id="Plan">Research Plan</h3>
-                          <p class = "project-desc">
-                               <span style="font-weight: 600">Research goals:</span> <br>
-                               1. <span style="font-weight: 600">Found out existing pain points that users had encounted during their experience with Tong Qu's iOS app.<br>
-                               2. Discovered other user requirements from different user groups for adding/deleting/modifying features in the following design phases.</span> <br>
-                          </p>     
-                          <p class = "project-desc">
-                               <span style="font-weight: 600">Selection of Methods and Justification:</span> <br>
-                               1.  <span style="font-weight: 600; color: rgb(30,30,30);">Collecting Existing User Feedback</span> - We collected Tong Qu's customer reviews from iOS App store and extracted the pain points and suggestions. This method helped us know the existing pain points and user requirements easily and quickly.<br></p>
-                          <p class = "project-desc">
-                               2. <span style="font-weight: 600; color: rgb(30,30,30)">App Analytics</span> - We checked the historical analytics data of Tong Qu and concluded the trends of how students used Tong Qu. It eanbled us to know the temporal changes in usage which reflected how users really used this product rather than what they talked about their experience.<br>
+                          <h3 class="overview_subtitle" id="Findings">Research Overview</h3>
+                          <p id="Research_overview" class = "project-desc">         
+                               In order to capture users' current pain points and other unmet needs, we combined qualitative and quantitative research methods to collect both broad and in-depth data to better understand the users.
                           </p>
-                          <p class = "project-desc">
-                               3. <span style="font-weight: 600; color: rgb(30,30,30)">Semi-structured Interviews</span> - We asked students who have used Tong Qu before to probe how and why they used it and their preferences for the platform(website or app). We took digital notes during each interview. We learnt a lot about users' using habits and expectations.<br>
+                          <img style = "width:100%" src="img/project3/research_methods.png">
+                          <p id="Research_detail" class="collapsible-button">
+                            <button class="btn black-button collapse-btn" type="button" data-toggle="collapse" data-target="#ideation-process" aria-expanded="false" aria-controls="collapseExample">See the Details of Research</button>
                           </p>
-                          <p class = "project-desc">
-                               4. <span style="font-weight: 600; color: rgb(30,30,30)">Competitive Analysis</span> - We studied exsiting products on the market which also played the role of event-publishing-and-finding platform. It taught us about how commercial products did their function design,  information architecture, interaction design and detailed UI design.<br>
-                          </p>
-                          
-                          <div class="divide_20"></div>
-                          <hr>
-                          <div class="divide_40"></div>
-                          <h3 class="overview_subtitle" id="Feedback">Collecting Existing User Feedback</h3>
-                          <p class = "project-desc">First, we collected feedback from iOS store. They ranged from 2014 to 2016. We mainly focused on those after the last update.</p>
-                          <p class = "project-desc"><span style="font-weight: 600">- Feedback from iOS stores mainly talked about the login and crash bugs which are the main pain points. As a result, we set the bug-fixing as our top priority in the later product requirement document.</span><br></p>
-                          <img src="img/project3/previous_feedback.png">
-                          <div class="divide_20"></div>
+                          <!--  hidden research contents start here -->
+                          <div class="collapse" id="ideation-process">
+                            <h3 class="detail_subtitle" id="Feedback">Collecting Existing User Feedback</h3>
+                            <p class = "project-desc">First, we collected feedback from iOS store. It ranged from 2014 to 2016.</p>
+                            <p class = "project-desc">- According to the feedback, <span style="background-color: rgb(255,230,240)">login and crash bugs are the main pain points.</span> As a result, we set the bug-fixing as our top priority in the later product requirement document.<br></p>
+                            <img src="img/project3/previous_feedback.png">
+                            <div class="divide_20"></div>
 
-                          <hr>
+                            <hr>
 
-                          <div class="divide_40"></div>
-                          <h3 class="overview_subtitle" id="Analytics">App Analytics</h3>
-                          <p class = "project-desc">Then we used the Apple's Analytics tool to look at the usage trends of Tong Qu. The marketing data are complete. But the usage data are limited to the users who are willing to share their data with Apple and developers like us.</p>
-                          <p class = "project-desc"><span style="font-weight: 600">- The usage data showed that students thought of Tong Qu like a tool which helped them enrich their campus life. When the breaks began, they barely used this app.<br>
-                          - Considered the limited number of users who wished to share data with us, our crashes stayed on a really high level which was congruent with users' direct feedback.</span></p>
-                          <img src="img/project3/crashes.png">
-                          <div class="divide_20"></div>
+                            <div class="divide_40"></div>
+                            <h3 class="detail_subtitle" id="Analytics">App Analytics</h3>
+                            <p class = "project-desc">Then we used the Apple's Analytics tool to look at the usage trends of Tong Qu. The marketing data are complete. But the usage data are limited to the users who are willing to share their data with developers like us.</p>
+                            <p class = "project-desc">- Students mainly used Tong Qu when they are on campus. <span style="background-color: rgb(255,230,240)">When the breaks began, they barely used this app.</span><br>
+                            - <span style="background-color: rgb(255,230,240)">The crashes stayed on a high level</span> which was congruent with users' direct feedback.</p>
+                            <img src="img/project3/crashes.png">
+                            <div class="divide_20"></div>
 
-                          <hr>
+                            <hr>
 
-                          <div class="divide_40"></div>
-                          <h3 class="overview_subtitle" id="Interviews">Semi-structured Interviews</h3>
-                          <p class = "project-desc">After knowing the general usage feedback and data, we started to collect in-depth qualitative data including:<br>
-                          - what the users thought of Tong Qu.<br>
-                          - what they expected from Tong Qu's app.<br>
-                          - Whether they preferred app or just the website and why.</p>
+                            <div class="divide_40"></div>
+                            <h3 class="detail_subtitle" id="Interviews">Semi-structured Interviews</h3>
+                            <p class = "project-desc">After getting the general feedback and usage data, we started to collect in-depth qualitative data including:<br>
+                            - what the users thought of Tong Qu.<br>
+                            - what they expected from Tong Qu's app.<br>
+                            - Whether they preferred app or just the website and why.</p>
 
-                          <p class = "project-desc">We conducted 13 semi-structured interviews with students who have used Tong Qu before(most of them are our friends and classmates) in Shanghai Jiao Tong University and took notes of their answers.</p>
-                          <p class = "project-desc"><span style="font-weight: 600">We used SWOT as a framework to categorize and analyze our notes in the spreadsheets.</span></p>
-                          <div class="divide_20"></div>
-                          <img class = "bottom_20" src="img/project3/interview.png">
-                          <div class="divide_20"></div>
+                            <p class = "project-desc">We conducted 13 semi-structured interviews with students who have used Tong Qu before(most of them are our friends and classmates) in Shanghai Jiao Tong University and took notes of their answers.</p>
+                            <p class = "project-desc"><span style="font-weight: 600">We used SWOT as a framework to categorize and analyze our notes in the spreadsheets.</span></p>
+                            <div class="divide_20"></div>
+                            <img class = "bottom_20" src="img/project3/interview.png">
+                            <div class="divide_20"></div>
 
-                          <hr>
+                            <hr>
 
-                          <div class="divide_40"></div>
-                          <h3 class="overview_subtitle" id="Competitive">Competitive Analysis</h3>
-                          <p class = "project-desc">Meanwhile, we studied two popular apps on the market. We listed their Pros and Cons respectively in terms of the information architecture, function design, interaction design and detailed UI design.</p>
-                          <div class="divide_20"></div>
-                          <img src="img/project3/competitor.png">
-                          <div class="divide_20"></div>
+                            <div class="divide_40"></div>
+                            <h3 class="detail_subtitle" id="Competitive">Competitive Analysis</h3>
+                            <p class = "project-desc">Meanwhile, we studied two popular apps on the market. We listed their Pros and Cons respectively in terms of the information architecture, function design, interaction design and detailed UI design.</p>
+                            <div class="divide_20"></div>
+                            <img src="img/project3/competitor.png">
+                            <div class="divide_20"></div>
+                          </div>
+                          <!-- hidden research contents end here -->   
+                      </div>
+                  </div>
 
-                          <hr>
-
-                          <div class="divide_40"></div>
+                  <div id="Define">
+                      <h2 class="page-header"><span style="color:#ff5722">03. </span>Define</h2>
+                      <hr>
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <h3 class="overview_subtitle" id="Findings">Synthesis of Findings</h3>
                           <p class = "project-desc"><span style="font-weight: 600">We aggregrated all the insights distilled from the research above and categorized them into two groups: existing pain points and new requirements.</span></p>
                         </div>
@@ -235,7 +210,7 @@
                           <hr>
 
                           <div class="divide_40"></div>
-                          <h3 class="overview_subtitle" id="Personas">Personas</h3>
+                          <h3 class="overview_subtitle" id="Personas">Generated 3 Personas to Represent Diverse User Groups</h3>
                           <p class = "project-desc">After the analysis of data, we used personas to represent the insights we got. We created 3 personas to illustrate our typical users, which helped us empathize with them and focus on their needs in the following design phases.</p>
                           <img src="img/project3/persona.png">
                           <div class="divide_20"></div>
@@ -250,13 +225,14 @@
                           - The priority would help us cut certain features if we ran out of time and make design decisions when we were in design dilemmas.</span></p>
                           <img src="img/project3/requirements.png">
                         </div>
-     
+      
                       </div>
+                      <div class="divide_80"></div>
                   </div>
 
                   <div id="Design">
-                      <div class="divide_80"></div>
-                      <h2 class="page-header"><span style="color:#ff5722">03. </span>Design Iterations</h2>
+                      
+                      <h2 class="page-header"><span style="color:#ff5722">04. </span>Design Iterations</h2>
                       <hr>
                       <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -316,11 +292,11 @@
                           <p class = "project-desc"><a target = "_blank" href="project3_detail.html#Use_Case"><span style="color:#4A90E2">Check the details of use cases.</span></a></p>
                           <img src="img/project3/use_case_1.png">
                       </div>
+                      <div class="divide_80"></div>
                   </div>
 
                   <div id="Implementation">
-                      <div class="divide_80"></div>
-                      <h2 class="page-header"><span style="color:#ff5722">04. </span>IMPLEMENTATION</h2>
+                      <h2 class="page-header"><span style="color:#ff5722">05. </span>IMPLEMENTATION</h2>
                       <hr>
                       <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -372,27 +348,27 @@
                   
                   <div class="nav_bottom row">
                     <div class="col-6 text-left">
-                      <a href="project2.html" class="block">
+                      <a href="project0.html" class="block">
 
                         <span>
                           <h4>
                             <small>Previous</small>
-                            <span><img class="prev_bottom" src="img/prev_bottom.svg"></span> BestBuy Demo
+                            <span><img class="prev_bottom" src="img/prev_bottom.svg"></span> Art on the Atlanta Beltline
                           </h4>
                         </span>
 
                       </a>
                     </div>
-<!--                     <div class="col-6 text-right right">
-                        <a href="project3.html" class="block">
+                    <div class="col-6 text-right right">
+                        <a href="project1.html" class="block">
                         <span>
                           <h4>
                             <small>Next</small>
-                            Tong Qu <span><img class="next_bottom" src="img/next_bottom.svg"></span>
+                            AI Planner <span><img class="next_bottom" src="img/next_bottom.svg"></span>
                           </h4>
                         </span>
                       </a>
-                    </div> -->
+                    </div>
                   </div>
 
               </div>
@@ -408,41 +384,41 @@
     <script type="text/javascript">
     $(document).ready(function() {
         /* Every time the window is scrolled ... */
-        $(window).scroll( function(){
-            /* Check the location of each desired element */
-            $('.hideme').each( function(i){
-                var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-                /* If the object is completely visible in the window, fade it it */
-                if( bottom_of_window > bottom_of_object ){
-                    $(this).animate({'opacity':'1'},500);
-                }
-            });
+        // $(window).scroll( function(){
+        //     /* Check the location of each desired element */
+        //     $('.hideme').each( function(i){
+        //         var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+        //         var bottom_of_window = $(window).scrollTop() + $(window).height();
+        //         /* If the object is completely visible in the window, fade it it */
+        //         if( bottom_of_window > bottom_of_object ){
+        //             $(this).animate({'opacity':'1'},500);
+        //         }
+        //     });
 
 
-        });
+        // });
 
-        $(window).scroll( function(){
-            /* Check the location of each desired element */
-            $('.backColor2').each( function(i){
-                var top_of_object = $(this).offset().top + $(this).outerHeight()/8;
-                var bottom_of_window = $(window).scrollTop() + $(window).height();
-                /* If the object is completely visible in the window, fade it it */
-                if( bottom_of_window > top_of_object ){
-                    $(this).animate({
-                      'opacity':'1'
-                      // 'background': 'linear-gradient(to right, #56CCF2 , #2F80ED)' /* Standard syntax */
-                    },{
-                      duration: 5000
-                    , easing: 'easeOutBounce'
-                    ,step: function(){
-                      console.log(1);
-                      $(this).css('background', 'linear-gradient(to right, #56CCF2 , #2F80ED)');
-                    }
-                  });
-                }
-            });
-        });
+        // $(window).scroll( function(){
+        //     /* Check the location of each desired element */
+        //     $('.backColor2').each( function(i){
+        //         var top_of_object = $(this).offset().top + $(this).outerHeight()/8;
+        //         var bottom_of_window = $(window).scrollTop() + $(window).height();
+        //         /* If the object is completely visible in the window, fade it it */
+        //         if( bottom_of_window > top_of_object ){
+        //             $(this).animate({
+        //               'opacity':'1'
+        //               // 'background': 'linear-gradient(to right, #56CCF2 , #2F80ED)' /* Standard syntax */
+        //             },{
+        //               duration: 5000
+        //             , easing: 'easeOutBounce'
+        //             ,step: function(){
+        //               console.log(1);
+        //               $(this).css('background', 'linear-gradient(to right, #56CCF2 , #2F80ED)');
+        //             }
+        //           });
+        //         }
+        //     });
+        // });
 
         $('body').scrollspy({ target: '.sidebar' });
         $('ul.nav li a').bind('click', function(e) {
@@ -450,6 +426,19 @@
           $('html,body').animate({scrollTop: $(this.hash).offset().top});
         });
 
+      $(".collapsible-button button[data-toggle='collapse']").click (function () {
+        $(this).text(function(i,old){
+          var newString = "";
+          if (old.startsWith("See")) {
+            newString = old.replace("See","Hide");
+          } else if (old.startsWith("Hide")){
+            newString = old.replace ("Hide","See");
+          } else {
+            newString = old;
+          }
+          return newString;
+        });
+      });
     });
     </script>
     <!-- Plugin JavaScript
@@ -466,7 +455,12 @@
     <script src="js/modernizr.js"></script>
     <script src="js/main.js"></script> -->
     <!-- <script src="js/main-dev.js"></script> -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js'></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js" integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <!--bootstrap 4.0 dependency-->
+<!--     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script> -->
     <!-- <script src="js/jquery-ui.js"></script> -->
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
